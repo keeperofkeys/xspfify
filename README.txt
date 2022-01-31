@@ -15,3 +15,7 @@ Visit https://developer.spotify.com/console/get-playlist-tracks/ and obtain an O
 (venv)> python
 >>> import main
 >>> main.backup_playlists_to_xspf()
+
+XSPF is an open source format for portable playlists. (https://www.xspf.org/) 
+
+This script produces a minimal playlist with just artist name and song title, for maximum compatibility. It should be easy to add additional fields to the output, by modifying the get_basic_track_details() method.
